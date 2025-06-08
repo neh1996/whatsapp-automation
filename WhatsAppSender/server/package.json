@@ -1,0 +1,17 @@
+```json
+{
+  "name": "whatsapp-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "NODE_ENV=development tsx server/index.ts",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build client",
+    "build:server": "tsc server/index.ts --outDir dist",
+    "start": "NODE_ENV=production node dist/index.js",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+```
